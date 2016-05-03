@@ -12,5 +12,10 @@ public class DriverFinalProject {
 		System.out.println("3 - Create Student");
 		menuChoice = input.nextInt();
 		input.close();
+		if (menuChoice == 1){
+			
+			System.out.println("What is the name of this class?");
+			
+		}
 	}
 }
