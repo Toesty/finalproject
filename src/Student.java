@@ -30,13 +30,6 @@ public class Student extends Entity {
         }
     }
 
-    void setSchool(School school) {
-        this.school = school;
-    }
-
-    public School getSchool() {
-        return school;
-    }
 
     public Course[] getCourses() {
         return Arrays.copyOf(courses, courses.length);
