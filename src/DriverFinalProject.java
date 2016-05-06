@@ -22,11 +22,6 @@ public class DriverFinalProject {
 
 		input.close();
 
-		menuChoice = input.nextInt();
-		if (menuChoice == 1) {
-
-			System.out.println("What is the name of this class?");
-
 		}
 	}
-}
+

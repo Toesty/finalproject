@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 public class Student extends Entity {
@@ -29,7 +30,6 @@ public class Student extends Entity {
             }
         }
     }
-
 
     public Course[] getCourses() {
         return Arrays.copyOf(courses, courses.length);
