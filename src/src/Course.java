@@ -1,15 +1,22 @@
-package src;
 
+package src;
 import java.util.*;
 
 public abstract class Course {
     private Teacher teacher;
     private Student[] students;
     private UUID id;
+    private String location;
+    private int time;
+    private String name;
+    
 
-    protected Course(int maxStudents, Teacher teacher) {
+    protected Course(int maxStudents, Teacher teacher, String location, int time, String name) { //might allow multiple teachers later
         students = new Student[maxStudents];
         this.teacher = teacher;
+        this.time = time;
+        this.location = location;
+        this.name = name;
 
         id = UUID.randomUUID();
     }
@@ -43,5 +50,18 @@ public abstract class Course {
         return full;
     }
 
-    public abstract String getName();
+    public String getName(){
+    	return name;
+    }
+    void changeName(String newName) {
+		name = newName;
+	}
+    void changeLocation(String newLocation) {
+		location = newLocation;
+	}
+    void changeTime(int newTime){
+    	time = newTime;
+    	
+    }
 }
+

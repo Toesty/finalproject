@@ -1,3 +1,5 @@
+package src;
+
 import java.util.*;
 
 public class Student extends Entity {
@@ -30,6 +32,11 @@ public class Student extends Entity {
         }
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> dc0e4f395eb15c41dae2df9bed4dfbb5e0e98107
     public Course[] getCourses() {
         return Arrays.copyOf(courses, courses.length);
     }
