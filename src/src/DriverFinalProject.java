@@ -13,9 +13,19 @@ public class DriverFinalProject {
 		menuChoice = input.nextInt();
 		input.close();
 		if (menuChoice == 1){
-			
+			Scanner menu1 = new Scanner(System.in);
 			System.out.println("What is the name of this class?");
+			Course c1 = new Course("course");
+			c1.changeName(menu1.nextLine());
+			System.out.println("What is the location of this class?");
+			c1.changeLocation(menu1.nextLine());
+			System.out.println("What is the time of this class?");
+			c1.changeTime(menu1.nextInt());
+			System.out.println("Who is the instructor of this class?");
+			c1.changeInstructor(menu1.nextLine());
+			System.out.println(c1.name + " will take place at "+c1.location + " at " + c1.time);
 			
 		}
 	}
+
 }
