@@ -8,6 +8,13 @@ public abstract class Course {
     private int time;
     private String name;
     
+    ArrayList Courses = new ArrayList();
+	void addCourse(){
+	Scanner addCourseScanner = new Scanner(System.in);
+	String name1;
+	name1 = addCourseScanner.nextLine();
+	Courses.add(name1);
+}
 
     protected Course(int maxStudents, Teacher teacher, String location, int time, String name) { //might allow multiple teachers later
         students = new Student[maxStudents];

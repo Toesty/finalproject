@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class DriverFinalProject {
@@ -7,6 +8,7 @@ public class DriverFinalProject {
 		int menuChoice;
 
 		Scanner input = new Scanner(System.in);
+		
 
 		System.out.println("What would you like to do?");
 		System.out.println("1 - Create Course");
@@ -21,7 +23,20 @@ public class DriverFinalProject {
 		System.out.println("8 - List Student Details");
 
 		input.close();
+		menuChoice = input.nextInt();
+		
+		if (menuChoice == 1) {
+
+			System.out.println("What is the name of this class?");
+			addCourse();
+				
 
 		}
+		}
+
+	private static void addCourse() {
+		// TODO Auto-generated method stub
+		
+	}
 	}
 
