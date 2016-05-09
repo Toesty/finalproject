@@ -31,14 +31,6 @@ public class Student extends Entity {
         }
     }
 
-<<<<<<< HEAD:src/src/Student.java
-<<<<<<< HEAD
-=======
-
-
->>>>>>> dc0e4f395eb15c41dae2df9bed4dfbb5e0e98107
-=======
->>>>>>> 89ba5d0525129886d00fa48a7514b38d09de4bba:src/Student.java
     public Course[] getCourses() {
         return Arrays.copyOf(courses, courses.length);
     }
