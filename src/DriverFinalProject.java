@@ -21,23 +21,33 @@ public class DriverFinalProject {
 
 		input.close();
 
-		if (input.nextInt() == 1) {
+		switch (input.nextInt()) {
+		case 1:
 			System.out.println("What would you like to name this course?");
-			}
-		if (input.nextInt() == 2) {
+			break;
+		case 2:
 			System.out.println("What is the name of this teacher?");
-		}
-		if (input.nextInt() == 3) {
+			break;
+		case 3:
 			System.out.println("What is the name of this student?");
-		}
-		if (input.nextInt() == 4) {
+			break;
+		case 4:
 			System.out.println("What course would you like to add a student to?");
 			System.out.println("What is the name of the student you would like to add to " + Course.name);
-		}
-		if (input.nextInt() == 5) {
-			System.out.println("What course would you like to add a student to?");
-			System.out.println("What is the name of the student you would like to add to " + Course.name);
+			break;
+		case 5:
+			System.out.println("What course would you like to remove a student from?");
+			System.out.println("What is the name of the student you would like to remove from " + Course.name + "?");
+			break;
+		case 6:
+			System.out.println("What course would you like to list the details of?");
+			break;
+		case 7:
+			System.out.println("What teacher would you like to list the details of?");
+			break;
+		case 8:
+			System.out.println("What student would you like to list the details of?");
+			break;
 		}
 	}
 }
-
