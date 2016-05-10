@@ -1,4 +1,4 @@
-
+//m3ch5 r 4 skrub5
 import java.util.*;
 
 public class Student extends Entity {
